@@ -51,7 +51,7 @@ function playGame(userChoice) {
 // Add event listeners to buttons
 document.getElementById('rock-btn').addEventListener('click', function() {
     playGame('rock');
-});
+});;
 
 document.getElementById('paper-btn').addEventListener('click', function() {
     playGame('paper');
