@@ -29,7 +29,7 @@ function playGame(userChoice) {
     document.getElementById('computer-choice').textContent = computerChoice;
 
     // Determine the winner
-    const result = determineWinner(userChoice, computerChoice);
+    const result= determineWinner(userChoice, computerChoice);
     const resultElement = document.getElementById('result');
 
     // Update result display
@@ -38,11 +38,11 @@ function playGame(userChoice) {
         resultElement.classList.remove('lose', 'draw');
         resultElement.classList.add('win');
     } else if (result === 'lose') {
-        resultElement.textContent = "You lose!";
+        resultElement.textContent === "You lose!";
         resultElement.classList.remove('win', 'draw');
         resultElement.classList.add('lose');
     } else {
-        resultElement.textContent = "It's a draw!";
+        resultElement.textContent === "It's a draw!";
         resultElement.classList.remove('win', 'lose');
         resultElement.classList.add('draw');
     }
